@@ -41,12 +41,6 @@ def predict(input: InputData):
     # Convert dict to DataFrame
     df = pd.DataFrame([input.data])
     
-    
-    print('=======================')
-    
-    print(df)
-    print('=======================')
-
     # Predict probability
     probability = float(model.predict_proba(df)[0][1])
 
