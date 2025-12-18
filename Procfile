@@ -1,1 +1,1 @@
-web: uvicorn my_api:app --port 8000
+web: uvicorn my_api:app --port $PORT
